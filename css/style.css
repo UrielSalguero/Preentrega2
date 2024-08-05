@@ -52,7 +52,7 @@ nav a {
     font-family: "godofwar";
 }
 body { 
-    background-color: rgba(224, 215, 86, 0.466); 
+    background-color: rgba(224, 215, 86, 0.466) !important; 
 }
 
 .subtitulo{
@@ -60,89 +60,49 @@ body {
     text-align: center;
     font-family: "godofwar";
     color: darkred;
-    text-shadow: 1px 1px 7px black; 
+    text-shadow: 1px 2px 20px black; 
     font-size: 5rem;
 }
 
 p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    padding: 20px;
+    font-family: sans-serif !important;
+    font-size: 1.2rem !important;
+    line-height: 1.5 !important;
+    padding: 20px !important;
 }
 
 .parrafointro{
-    font-size: 1.8rem;
-    line-height: 1.5;
-    padding: 20px;
-    text-align: justify;
+    font-family: sans-serif !important;
+    font-size: 1.8rem !important;
+    line-height: 1.5 !important;
+    padding: 20px !important;
+    text-align: justify !important;
+    text-shadow: 2px 2px 20px black !important;
 }
 
 .contenedorgeneral {
-    
     padding: 20px;
 }
 
 .subtitulo4 {
-    text-align: center;
-    font-family: "godofwar";
-    color: darkred;
-    text-shadow: 3px 3px 10px black;
-    font-size: 2rem;
-}
-
-.contenedor {
-    width: 100%;
-    overflow: hidden;
-    padding: 10px;
-    box-sizing: border-box;
+    text-align: center !important;
+    font-family: "godofwar" !important;
+    color: darkred !important;
+    text-shadow: 2px 2px 20px black !important;
+    font-size: 2rem !important;
 }
 
 .subtitulocontenedor {
-    text-align: center;
-    font-family: "godofwar";
-    float: center;
-    width: 100%;
-    margin: 20px 0;
-    text-shadow: 2px 2px 10px black;
-    font-size: 1.5rem;
-    color: darkred;
+    text-align: center !important;
+    font-family: "godofwar" !important;
+    float: center !important;
+    width: 100% !important;
+    margin: 20px 0 !important;
+    text-shadow: 1px 1px 1px black !important;
+    font-size: 2rem !important;
+    color: darkred !important;
 }
 
-.contenedor1 {
-    background-image: url("../img/imagen1.1.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 510px;
-    width: 72%; 
-    margin: 10px auto;
-    border: 1px solid darkred;
-    
-}
-
-.contenedor2 {
-    background-image: url("../img/imagen3.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 510px;
-    width: 72%; 
-    margin: 10px auto;
-    border: 1px solid darkred;
-   
-}
-
-.contenedor3 {
-    background-image: url("../img/imagen4.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 510px;
-    width: 72%; 
-    margin: 10px auto;
-    border: 1px solid darkred;
-    
-}
 
 footer {
     background-color: darkred;
@@ -162,154 +122,6 @@ footer {
     padding-left: 25px;
 }
 
-@media (max-width: 1360px) {
- 
-    nav ul li {
-        display: inline; 
-        margin-right: auto;
-        padding-left: 3.5px;
-    }
-
-    .subtitulo {
-        font-size: 4rem; 
-    }
-
-    .parrafointro {
-        font-size: 1.6rem; 
-    }
-
-    .subtitulo4 {
-        font-size: 1.75rem; 
-    }
-}
-
-@media (max-width: 1280px) {
-    nav {
-        padding: 20px;
-        flex-direction: column; 
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: column; 
-        align-items: flex-end; 
-        margin-top: 10px; 
-    }
-    
-    nav ul li {
-        margin: 10px 0; 
-    }
-
-    .subtitulo {
-        font-size: 4rem; 
-    }
-
-    .parrafointro {
-        font-size: 1.6rem; 
-    }
-
-    .subtitulo4 {
-        font-size: 1.75rem; 
-    }
-}
-
-@media (max-width: 1050px) {
-    nav {
-        padding: 20px;
-        flex-direction: column; 
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: column; 
-        align-items: flex-end; 
-        margin-top: 10px; 
-    }
-    
-    nav ul li {
-        margin: 10px 0; 
-    }
-
-    .subtitulo {
-        font-size: 4rem; 
-    }
-
-    .parrafointro {
-        font-size: 1.6rem; 
-    }
-
-    .subtitulo4 {
-        font-size: 1.75rem; 
-    }
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        padding-left: 100px;
-        text-align: right; 
-    }
-    
-    nav ul li {
-        display: block;
-        margin: 10px 0; 
-    }
-
-    .subtitulo {
-        font-size: 3rem;
-    }
-
-    .parrafointro {
-        font-size: 1.5rem;
-    }
-
-    .subtitulo4 {
-        font-size: 1.5rem;
-    }
-
-    .contenedor1, .contenedor2, .contenedor3 {
-        height: 300px; 
-    }
-    footer {
-        justify-content: flex-end;
-    }
-}
-
-@media (max-width: 480px) {
-    nav ul {
-        padding-left: 300px;
-        text-align: right; 
-    }
-    
-    nav ul li {
-        display: block;
-        margin: 10px 0; 
-    }
-    nav h1 {
-        font-size: 30px;
-    }
-
-    .subtitulo {
-        font-size: 2rem;
-    }
-
-    .parrafointro {
-        font-size: 1.2rem;
-    }
-
-    .subtitulo4 {
-        font-size: 1.2rem;
-    }
-
-    footer {
-        display: block;
-        justify-content: center;
-        padding: 20px;
-    }
-
-    .titulo {
-        font-size: 30px;
-    }
-}
 
 /*HISTORIA*/
 
@@ -344,7 +156,7 @@ footer {
     text-shadow: 1px 1px 15px black;
 }
 
-.parrafohistoria{
+.parrafohistoria {
     font-size: 1.8rem;
     line-height: 1.5;
     padding: 20px;
@@ -352,7 +164,7 @@ footer {
     text-shadow: 2px 2px 15px black;
 }
 
-.subtitulohistoria2{
+.subtitulohistoria2 {
     font-family: "godofwar";
     background-color: darkred;
     color: white;
@@ -362,28 +174,26 @@ footer {
     text-align: center;
 }
 
-.contenedorcapitulo {
+.contenedorcapitulos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
 }
 
 .capitulo {
     background-color: rgba(37, 37, 37, 0.274);
-    display: inline-block;
-    vertical-align: top;
-    width: 31.1%; 
-    height: 550px; 
-    margin: 0px 1%;
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 20px;
+    box-sizing: border-box;
     text-align: justify;
 }
 
 .capitulo p {
     color: darkred;
 }
-
 
 .subtitulocapitulo {
     padding: 10px;
@@ -539,3 +349,148 @@ h3 {
     font-size: 42px;
 }
 
+@media screen and (max-width: 1360px) {
+ 
+    nav ul li {
+        display: inline; 
+        margin-right: auto;
+        padding-left: 3.5px;
+    }
+
+    .subtitulo {
+        font-size: 4rem; 
+    }
+
+    .parrafointro {
+        font-size: 1.6rem; 
+    }
+
+    .subtitulo4 {
+        font-size: 1.75rem; 
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    nav {
+        padding: 20px;
+        flex-direction: column; 
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-end; 
+        margin-top: 10px; 
+    }
+    
+    nav ul li {
+        margin: 10px 0; 
+    }
+
+    .subtitulo {
+        font-size: 4rem; 
+    }
+
+    .parrafointro {
+        font-size: 1.6rem; 
+    }
+
+    .subtitulo4 {
+        font-size: 1.75rem; 
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    nav {
+        padding: 20px;
+        flex-direction: column; 
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-end; 
+        margin-top: 10px; 
+    }
+    
+    nav ul li {
+        margin: 10px 0; 
+    }
+
+    .subtitulo {
+        font-size: 4rem; 
+    }
+
+    .parrafointro {
+        font-size: 1.6rem; 
+    }
+
+    .subtitulo4 {
+        font-size: 1.75rem; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        padding-left: 100px;
+        text-align: right; 
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0; 
+    }
+
+    .subtitulo {
+        font-size: 3rem;
+    }
+
+    .parrafointro {
+        font-size: 1.5rem;
+    }
+
+    .subtitulo4 {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav ul {
+        padding-left: 300px;
+        text-align: right; 
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0; 
+    }
+    nav h1 {
+        font-size: 30px;
+    }
+
+    .subtitulo {
+        font-size: 2rem;
+    }
+
+    .parrafointro {
+        font-size: 1.2rem;
+    }
+
+    .subtitulo4 {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        display: block;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .titulo {
+        font-size: 30px;
+    }
+}
