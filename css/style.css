@@ -84,12 +84,17 @@ p {
     padding: 20px;
 }
 
+.colorsub4 {
+    background-color: darkred;
+}
+
 .subtitulo4 {
     text-align: center !important;
     font-family: "godofwar" !important;
-    color: darkred !important;
+    color: whitesmoke !important;
     text-shadow: 2px 2px 20px black !important;
     font-size: 2rem !important;
+    padding: 20px;
 }
 
 .subtitulocontenedor {
@@ -201,7 +206,6 @@ footer {
     font-family: "godofwar";
     color: darkred;
 }
-
 
 /* PERSONAJES */
 
