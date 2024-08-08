@@ -329,38 +329,49 @@ footer {
     font-size: 5rem;
 }
 
+
 /* COMPRAR YA*/
 
-.contenidocomprarya { 
-    margin: 150px auto;
-    width: 70%;
-    overflow: hidden; 
+.subtitulo {
+    margin-bottom: 20px;
 }
 
-.imagencomprarya {
-    max-width: 320px;
-    float: left;
-    margin-right: 20px; 
+.comprarya {
+    padding: 5px;
+    border: 2px solid darkred;
+    background-color: rgba(37, 37, 37, 0.274);
 }
 
-.contenido {
-    color: black;
-    overflow: hidden; 
+.contenidocomprar {
+    padding-top: 20px;
 }
 
-.titulocompraya {
-    text-align: center;
-    font-family: "godofwar";
-    font-weight: 900;
-    font-size: 50px;
-    letter-spacing: 3px;
+.btn-danger {
+    margin-top: 5px;
+}
+
+.parrafocomprar {
     color: darkred;
-    padding-top: 30px;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    padding: 20px;
+    text-align: justify;
+    text-shadow: 1px 1px 1px darkred;
+    font-family: "godofwar" !important;
 }
 
-.contenido h3 {
-    font-size: 42px;
+.listacomprar {
+    color: darkred;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 20px;
+    text-align: justify;
+    text-shadow: 1px 1px 1px rgb(224, 67, 67);
+    font-family: "godofwar" !important;
 }
+
+
+/*Media querys*/
 
 @media screen and (max-width: 1360px) {
  
