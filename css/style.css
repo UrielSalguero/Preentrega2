@@ -281,6 +281,7 @@ footer {
     margin: 0;
 }
 
+
 .descripcionpersonaje p {
     letter-spacing: 1px;
     font-size: 14px; 
@@ -291,62 +292,42 @@ footer {
 /* GALERIA */
 
 #contenidogaleria {
-    text-align: center;
-    width: 90%;
+    width: 100%;
     margin: auto;
-    padding-top: 25px;
-    padding-bottom: 25px;
 }
 
-h2 {
-    font-size: 35px;
-    font-family: "godofwar";
-    color: darkred;
-}
-
-.galeria {
-    margin-top: 25px;
-}
-
-.imagen {
-    display: inline-flex;
-    width: 260px;
-    height: 200px;
-    margin-top: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
-    border-radius: 5px;
-    overflow: hidden;   
-}
-
-.imagen img{
+#contenidogaleria img {
     width: 100%;
-    height: 100%;
+    height: 250px;
+    border-radius: 10px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
-h3 {
-    font-size: 35px;
+#contenidogaleria img:hover {
+    border: 5px solid darkred;
+    transform: scale(1.05); 
+}
+
+#contenidogaleria .col-lg-4 {
+    padding: 10px;
+    margin: 0 !important;
+}
+
+.titulogaleria {
     font-family: "godofwar";
     color: darkred;
+    text-shadow: 1px 2px 20px black; 
+    font-size: 5rem;
+}
+
+.titulogaleria2 {
+    padding: 40px;
     text-align: center;
-    padding: 20px;
+    font-family: "godofwar";
+    color: darkred;
+    text-shadow: 1px 2px 20px black; 
+    font-size: 5rem;
 }
-
-.video {
-    width: 400px;
-    height: 400px;
-    margin-top: 20px;
-    margin-left: 75px;
-    margin-right: 5px;
-
-}
-
-.video video{
-    width: 100%;
-    height: 100%;
-}
-
-
 
 /* COMPRAR YA*/
 
