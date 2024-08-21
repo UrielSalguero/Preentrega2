@@ -3,33 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>GOD OF WAR</title>
 </head>
 <body>
-    <header id="header">
-        <nav>
-            <h1 class="titulo">GOD OF WAR</h1>
-            <ul>
-                <li>
-                    <a href="../index.html">INICIO</a>
-                </li>
-                <li>
-                    <a href="./historia.html">HISTORIA</a>
-                </li>
-                <li>
-                    <a href="./personajes.html">PERSONAJES</a>
-                </li>
-                <li>
-                    <a href="./galeria.html">GALERIA</a>
-                </li>
-                <li>
-                    <a href="./comprarya.html">COMPRAR YA</a>
-                </li>
-            </ul>
-        </nav>
-        
-    </header>
+     <header class="header">
+    <nav class="navbar">
+        <h1 class="titulo">GOD OF WAR</h1>
+        <label class="label_hamburguesa" for="menu_hamburguesa">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                fill="currentColor"
+                class="list_icon"
+                viewBox="0 0 16 16">
+                <path
+                    fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </label>
+        <input class="menu_hamburguesa" type="checkbox" id="menu_hamburguesa">
+        <ul class="ul_links">
+            <li class="li_links">
+              <a href="../index.html" class="link">INICIO</a>
+            </li>
+            <li class="li_links">
+              <a href="./historia.html" class="link">HISTORIA</a>
+            </li>
+            <li class="li_links">
+              <a href="./personajes.html" class="link">PERSONAJES</a>
+            </li>
+            <li class="li_links">
+              <a href="./galeria.html" class="link">GALERIA</a>
+            </li>
+            <li class="li_links">
+              <a href="./comprarya.html" class="link">COMPRAR YA</a>
+            </li>
+        </ul>
+    </nav>
+  </header>
 
     <main>
         <section>
@@ -96,6 +109,12 @@
 
     <footer>
         <h2 class="titulo">GOD OF WAR</h2>
+        <div class="iconosfooter">
+            <a href="" class="iconos"></a>
+            <a href="" class="iconos"></a>
+            <a href="" class="iconos"></a>
+            <a href="" class="iconos"></a>
+        </div>
         <span class="copy">© 2024 God of War. Todos los derechos reservados</span>
     </footer>
 </body>

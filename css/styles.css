@@ -2,6 +2,104 @@
   font-family: "godofwar";
   src: url("../font/GODOFWAR.TTF");
 }
+.header {
+  height: 160px;
+  background-color: darkred;
+  z-index: 1000;
+}
+.header .navbar {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+}
+.header .navbar .titulo {
+  text-align: left;
+  font-family: "godofwar";
+  font-weight: 900;
+  font-size: 45px;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 10px black;
+  color: whitesmoke;
+  padding-left: 25px;
+}
+.header .navbar .label_hamburguesa {
+  display: none;
+}
+.header .navbar .label_hamburguesa .list_icon {
+  color: whitesmoke;
+  cursor: pointer;
+}
+.header .navbar .menu_hamburguesa {
+  display: none;
+}
+.header .navbar .menu_hamburguesa:checked + .ul_links {
+  height: calc(100vh - 160px);
+}
+.header .navbar ol, .header .navbar ul {
+  list-style: none;
+}
+.header .navbar .ul_links {
+  width: 100%;
+  background-color: darkred;
+  position: absolute;
+  top: 160px;
+  left: 0;
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  transition: height 0.3s;
+  z-index: 1100;
+}
+.header .navbar .ul_links .li_links a {
+  text-decoration: none;
+}
+.header .navbar .ul_links .li_links .link {
+  font-size: 20px;
+  color: whitesmoke;
+  font-weight: bold;
+  font-family: "godofwar";
+}
+
+@media (max-width: 767px) {
+  .header .navbar .label_hamburguesa {
+    display: block;
+  }
+  .header .navbar .menu_hamburguesa {
+    display: block;
+  }
+  .header .navbar .ul_links {
+    display: none;
+  }
+  .header .navbar .menu_hamburguesa:checked ~ .ul_links {
+    display: flex;
+    height: calc(100vh - 160px);
+    overflow-y: auto;
+  }
+}
+@media (min-width: 768px) {
+  .header .navbar .label_hamburguesa {
+    display: none;
+  }
+  .header .navbar .ul_links {
+    position: static;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .header .navbar .ul_links .link {
+    font-size: 1.2rem;
+    transition: all 0.3s;
+    padding: 0.2rem 0.7rem;
+  }
+}
 * {
   padding: 0%;
   margin: 0%;
@@ -16,46 +114,6 @@ body p {
   font-size: 1.2rem !important;
   line-height: 1.5 !important;
   padding: 20px !important;
-}
-
-header {
-  background-color: darkred;
-  padding-bottom: 20px;
-}
-header nav {
-  padding-top: 20px;
-  padding-left: 5%;
-  padding-right: 5%;
-  font-weight: bold;
-}
-header nav .titulo {
-  display: inline-block;
-  vertical-align: middle;
-  font-family: "godofwar";
-  font-weight: 900;
-  font-size: 45px;
-  letter-spacing: 3px;
-  text-shadow: 2px 2px 10px black;
-  color: whitesmoke;
-  padding-left: 25px;
-  margin: 0;
-}
-header nav ul {
-  display: inline-block;
-  vertical-align: middle;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  padding-left: 270px;
-}
-header nav ul li {
-  display: inline;
-  margin-right: 15px;
-}
-header nav ul li a {
-  color: whitesmoke;
-  text-decoration: none;
-  font-family: "godofwar";
 }
 
 .subtitulo {
@@ -102,24 +160,6 @@ header nav ul li a {
   color: darkred !important;
 }
 
-footer {
-  background-color: darkred;
-  padding: 2rem;
-  text-align: right;
-  margin-top: auto;
-}
-footer .titulo {
-  text-align: left;
-  font-family: "godofwar";
-  font-weight: 900;
-  font-size: 45px;
-  letter-spacing: 3px;
-  text-shadow: 2px 2px 10px black;
-  color: whitesmoke;
-  padding-left: 25px;
-}
-
-/* HISTORIA */
 .fondohistoria {
   min-height: 120vh;
   display: flex;
@@ -147,6 +187,7 @@ footer .titulo {
   position: relative;
   color: darkred;
   text-shadow: 1px 1px 15px black;
+  opacity: 1;
 }
 
 .parrafohistoria {
@@ -192,7 +233,6 @@ footer .titulo {
   color: darkred;
 }
 
-/* PERSONAJES */
 .contenedorP {
   display: flex;
   flex-wrap: wrap;
@@ -261,7 +301,6 @@ footer .titulo {
   transform: translateY(0);
 }
 
-/* GALERIA */
 #contenidogaleria {
   width: 100%;
   margin: auto;
@@ -296,7 +335,6 @@ footer .titulo {
   font-size: 5rem;
 }
 
-/*COMPRAR YA*/
 .subtitulo {
   margin-bottom: 20px;
   font-family: "godofwar";
@@ -342,48 +380,24 @@ footer .titulo {
   margin-top: 5px;
 }
 
-/* MEDIA QUERYS*/
-nav {
-  padding: 20px;
-  flex-direction: column;
-}
-nav ul li {
-  display: inline;
-  margin-right: auto;
-  padding-left: 3.5px;
-}
-nav ul {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin-top: 10px;
-}
-nav ul li {
-  margin: 10px 0;
-}
-
-.subtitulo {
-  font-size: 4rem;
-}
-
-.parrafointro {
-  font-size: 1.6rem;
-}
-
-.subtitulo4 {
-  font-size: 1.75rem;
-}
-
 footer {
-  justify-content: flex-end;
+  background-color: darkred;
+  padding: 2rem;
+  text-align: right;
+  margin-top: auto;
+}
+footer .titulo {
+  text-align: left;
+  font-family: "godofwar";
+  font-weight: 900;
+  font-size: 45px;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 10px black;
+  color: whitesmoke;
+  padding-left: 25px;
 }
 
 @media screen and (max-width: 1360px) {
-  nav ul li {
-    display: inline;
-    margin-right: auto;
-    padding-left: 3.5px;
-  }
   .subtitulo {
     font-size: 4rem;
   }
@@ -395,19 +409,6 @@ footer {
   }
 }
 @media screen and (max-width: 1280px) {
-  nav {
-    padding: 20px;
-    flex-direction: column;
-  }
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-top: 10px;
-  }
-  nav ul li {
-    margin: 10px 0;
-  }
   .subtitulo {
     font-size: 4rem;
   }
@@ -419,19 +420,6 @@ footer {
   }
 }
 @media screen and (max-width: 1050px) {
-  nav {
-    padding: 20px;
-    flex-direction: column;
-  }
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-top: 10px;
-  }
-  nav ul li {
-    margin: 10px 0;
-  }
   .subtitulo {
     font-size: 4rem;
   }
@@ -443,14 +431,6 @@ footer {
   }
 }
 @media screen and (max-width: 768px) {
-  nav ul {
-    padding-left: 100px;
-    text-align: right;
-  }
-  nav ul li {
-    display: block;
-    margin: 10px 0;
-  }
   .subtitulo {
     font-size: 3rem;
   }
@@ -465,14 +445,6 @@ footer {
   }
 }
 @media screen and (max-width: 480px) {
-  nav ul {
-    padding-left: 300px;
-    text-align: right;
-  }
-  nav ul li {
-    display: block;
-    margin: 10px 0;
-  }
   nav h1 {
     font-size: 30px;
   }
@@ -495,4 +467,4 @@ footer {
   }
 }
 
-/*# sourceMappingURL=estilo.css.map */
+/*# sourceMappingURL=styles.css.map */
